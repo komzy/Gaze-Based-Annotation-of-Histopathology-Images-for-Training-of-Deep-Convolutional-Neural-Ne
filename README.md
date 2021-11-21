@@ -15,6 +15,8 @@
 ## Generate Annotations 
 Refer to /Generate_Annotations
 
+## Training
+
 ## Evaluation
 Download and extract Gaze-based and Hand-Annotated trained models to 'saved_models' directory. <add link>
 
