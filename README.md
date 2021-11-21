@@ -13,7 +13,7 @@
 - Google Colab or Jupyter Notebook
 
 ## Generate Annotations 
-Refer to /Generate_Annotations
+Refer to \Generate_Annotations
 
 ## Training
 (under construction)
