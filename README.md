@@ -13,7 +13,7 @@
 - Google Colab or Jupyter Notebook
 
 ## Generate Annotations 
-Run the scripts in /Generate_Annotations
+Refer to /Generate_Annotations
 
 ## Evaluation
 Run Evaluation.ipynb notebook. Set the models accordingly
