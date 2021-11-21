@@ -8,7 +8,7 @@
 - MATLAB (masks to bounding box conversion)
 - Google Colab or Jupyter Notebook
 
-## Generate Annotations / Download Dataset
+## Dataset
 Follow the steps in \Generate_Annotations to create your own dataset from gaze and hand annotations.
 
 Or simply download the data here:
