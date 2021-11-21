@@ -5,7 +5,7 @@ Qupath Scripts:
 2) Qupath_to_CSV.groovy: Reverse of CSV_to_Qupath.groovy. Exports Point annotations from Qupath to CSV. A CSV is generated 
 for each zoom level that can be opened by our gaze visualizer. Only "Point" objects are exported.
 
-3) Merge_Levels_CSV.groovy: Scales up all the points on  various zoom levels to the highest zoom level and merges them on the highest zoom level. Then generates a "Level <max_level>" CSV. 
+3) Qupath_Merge_Levels.groovy: Scales up all the points on  various zoom levels to the highest zoom level and merges them on the highest zoom level. Then generates a "Level <max_level>" CSV. 
 
 Python Scripts:
 
