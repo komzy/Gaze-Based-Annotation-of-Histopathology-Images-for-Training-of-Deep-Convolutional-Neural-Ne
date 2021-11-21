@@ -16,4 +16,4 @@
 Refer to /Generate_Annotations
 
 ## Evaluation
-Run Evaluation.ipynb notebook. Download Gaze-based and Hand-Annotated trained models here. <add link>
+Run Evaluation.ipynb notebook. Download and extract Gaze-based and Hand-Annotated trained models to saved_models directory. <add link>
