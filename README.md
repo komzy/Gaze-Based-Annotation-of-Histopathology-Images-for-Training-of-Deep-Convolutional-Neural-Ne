@@ -1,4 +1,4 @@
-# Gaze-Based-Annotation-of-Histopathology-Images-for-Training-of-Deep-Convolutional-Neural-Networks
+# Gaze Based Annotation of Histopathology Images for Training of Deep Convolutional Neural Networks
 (under construction)
 
 ## Requirements
