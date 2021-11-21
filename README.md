@@ -4,7 +4,7 @@
 ## Requirements
 - Tensorflow 2.x
 - Python 3.x
-- Qupath (
+- Qupath
 - MATLAB (masks to bounding box conversion)
 - Google Colab or Jupyter Notebook
 
