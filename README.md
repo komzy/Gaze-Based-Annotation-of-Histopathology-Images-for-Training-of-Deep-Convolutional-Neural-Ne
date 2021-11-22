@@ -21,7 +21,7 @@ Install dependenies
 ```
 pip install lxml pillow matplotlib jupyter contextlib2 cython tf_slim
 ```
-
+Install the [TensorFlow Object Detection API ](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1.md).
 ## Dataset
 Follow the steps in \Generate_Annotations to create your own dataset from gaze and hand annotations.
 
