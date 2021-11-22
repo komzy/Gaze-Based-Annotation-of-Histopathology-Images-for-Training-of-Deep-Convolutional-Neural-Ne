@@ -3,18 +3,18 @@
 
 ## Requirements
 - Tensorflow 1.15
-- Python 3.5
+- Python 3.7
 - Qupath
 - MATLAB (masks to bounding box conversion)
 - Google Colab or Jupyter Notebook
 
 ## Setting up Python Environment
 ```
-conda create -n tensorflow1.15 python=3.5
+conda create -n tensorflow1.15 python=3.7
 conda activate tensorflow1.15
 conda install cudatoolkit=10.0
 conda install cudnn=7.3.1
-pip3 install tensorflow-gpu==1.15
+pip install tensorflow-gpu==1.15
 ```
 
 ## Dataset
