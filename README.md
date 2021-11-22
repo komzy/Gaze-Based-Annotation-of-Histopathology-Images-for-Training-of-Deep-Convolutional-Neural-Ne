@@ -8,6 +8,15 @@
 - MATLAB (masks to bounding box conversion)
 - Google Colab or Jupyter Notebook
 
+## Installation (Tensorflow Only)
+```
+conda create -n tensorflow1.15 python=3.5
+conda activate tensorflow1.15
+conda install cudatoolkit=10.0
+conda install cudnn=7.3.1
+pip3 install tensorflow-gpu==1.15
+```
+
 ## Dataset
 Follow the steps in \Generate_Annotations to create your own dataset from gaze and hand annotations.
 
@@ -24,7 +33,6 @@ Or train on your own dataset by downloading [Faster RCNN Inception V2 weights](h
 
 ## Training
 
-(under construction)
 
 ## Evaluation
 Download and extract Gaze-based and Hand-Annotated trained models to 'saved_models' directory. <add link>
