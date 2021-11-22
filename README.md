@@ -19,7 +19,7 @@ pip install tensorflow-gpu==1.15
 ```
 Install dependenies
 ```
-conda install pillow lxml jupyter matplotlib opencv cython
+pip install lxml pillow matplotlib jupyter contextlib2 cython tf_slim
 ```
 
 ## Dataset
