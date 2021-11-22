@@ -11,7 +11,7 @@
 ## Dataset
 Follow the steps in \Generate_Annotations to create your own dataset from gaze and hand annotations.
 
-Or simply download the data here:
+Or simply download our dataset here:
 
 - Gaze: https://1drv.ms/u/s!As_geBXhgCy1qjOElYHo5oWX_OQ0?e=L38qQ6
 - Hand: https://1drv.ms/u/s!As_geBXhgCy1qwa3-NdukNHbLRsb?e=NT3Abi
