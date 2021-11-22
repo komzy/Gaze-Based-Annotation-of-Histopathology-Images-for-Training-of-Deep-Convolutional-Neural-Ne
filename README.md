@@ -8,7 +8,7 @@
 - MATLAB (masks to bounding box conversion)
 - Google Colab or Jupyter Notebook
 
-## Installation (Tensorflow Only)
+## Setting up Python Environment
 ```
 conda create -n tensorflow1.15 python=3.5
 conda activate tensorflow1.15
