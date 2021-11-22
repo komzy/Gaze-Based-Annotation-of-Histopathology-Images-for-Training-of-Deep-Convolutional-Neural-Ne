@@ -2,8 +2,8 @@
 (under construction)
 
 ## Requirements
-- Tensorflow 2.x
-- Python 3.x
+- Tensorflow 1.15
+- Python 3.5
 - Qupath
 - MATLAB (masks to bounding box conversion)
 - Google Colab or Jupyter Notebook
