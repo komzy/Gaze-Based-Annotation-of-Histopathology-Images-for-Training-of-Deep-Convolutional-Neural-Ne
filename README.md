@@ -19,6 +19,7 @@ Or simply download our dataset here:
 
 ## Models
 Download pre-trained models: https://1drv.ms/u/s!As_geBXhgCy1rSjYGEV7aMdLiYnr?e=qLZOUz
+Or train on your own dataset by downloading [Faster RCNN Inception V2 weights](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz) from Tensorflow model zoo. 
 
 ## Training
 
