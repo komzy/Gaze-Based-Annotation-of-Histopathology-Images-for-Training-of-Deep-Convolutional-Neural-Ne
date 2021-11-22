@@ -9,7 +9,7 @@
 - Google Colab or Jupyter Notebook
 
 ## Setting up Python Environment
-Install TF GPU in a virtual environment:
+Create virtual environment and install Tensorflow:
 ```
 conda create -n tensorflow1.15 python=3.7
 conda activate tensorflow1.15
