@@ -38,6 +38,11 @@ Or simply download our dataset here:
 ## Training
 Download raw Faster RCNN Inception V2 Weight.
 
+Now, to initiate a new training job, open a new Terminal, cd inside the models/research/object_detection folder and run the following command:
+```
+python model_main_tf2.py --model_dir=models/my_ssd_resnet50_v1_fpn --pipeline_config_path=models/my_ssd_resnet50_v1_fpn/pipeline.config
+```
+
 ## Evaluation
 Download and extract Gaze-based and Hand-Annotated trained models to 'saved_models' directory. <add link>
 
