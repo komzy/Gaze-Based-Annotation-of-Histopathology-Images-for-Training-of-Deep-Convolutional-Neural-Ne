@@ -19,7 +19,7 @@ pip install tensorflow-gpu==1.15
 ```
 Install dependenies
 ```
-pip install lxml pillow matplotlib jupyter contextlib2 cython tf_slim
+pip install lxml pillow matplotlib jupyter contextlib2 cython tf_slim pycocotools-windows 
 ```
 Install the [TensorFlow Object Detection API ](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1.md).
 ## Dataset
