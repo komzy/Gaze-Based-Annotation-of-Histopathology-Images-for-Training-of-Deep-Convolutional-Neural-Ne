@@ -9,7 +9,7 @@
 - Google Colab or Jupyter Notebook
 
 ## Setting up Python Environment
-Create virtual environment and install Tensorflow:
+1) Create virtual environment and install Tensorflow:
 ```
 conda create -n tensorflow1.15 python=3.7
 conda activate tensorflow1.15
@@ -17,11 +17,11 @@ conda install cudatoolkit=10.0
 conda install cudnn=7.6.5
 pip install tensorflow-gpu==1.15
 ```
-Install dependenies
+2) Install dependencies
 ```
 pip install lxml pillow matplotlib jupyter contextlib2 cython tf_slim pycocotools-windows 
 ```
-Install the [TensorFlow Object Detection API ](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1.md).
+3) Install the [TensorFlow Object Detection API ](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1.md).
 ## Dataset
 Follow the steps in \Generate_Annotations to create your own dataset from gaze and hand annotations. **@komal:** *I don't see the raw gaze files. Have we provided a link to those somewhere? That link should be visible here and/or in the readme file in \Generate_Annotations.*
 
