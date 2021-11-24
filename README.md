@@ -49,3 +49,11 @@ python model_main.py --model_dir=C:\Thesis\tensorflow1\models\research\object_de
 Download and extract Gaze-based and Hand-Annotated trained models to 'saved_models' directory. <add link>
 
   Run Evaluation.ipynb notebook.
+
+## Reference
+This repo was used to generate the results for the following paper on Gaze-based labelling of Pathology data. 
+   
+   Komal Mariam, Osama Mohammed Afzal, Wajahat Hussain, Muhammad Umar Javed, Amber Kiyani, Nasir Rajpoot, Syed Ali Khurram and Hassan Aqeel Khan, **"On Smart Gaze based Annotation of Histopathology Images for Training of Deep Convolutional Neural Networks",** *submitted to IEEE Journal of Biomedical and Health Informatics.*
+
+
+**BibTex Reference:** Available after acceptance.
