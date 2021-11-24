@@ -38,6 +38,8 @@ Or simply download our dataset here:
 - Raw [Faster RCNN Inception V2 weights](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz) 
 
 ## Training
+(under construction)
+
 Download raw Faster RCNN Inception V2 Weight.
 
 Now, to initiate a new training job, open a new Terminal, cd inside the models/research/object_detection folder and run the following command:
