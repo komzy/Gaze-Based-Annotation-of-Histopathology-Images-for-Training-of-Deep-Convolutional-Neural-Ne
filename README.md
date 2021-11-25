@@ -2,6 +2,7 @@
 (under construction)
 
 ## Requirements
+- Anaconda
 - Tensorflow 1.15
 - Python 3.7
 - Qupath
