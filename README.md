@@ -19,8 +19,9 @@ pip install tensorflow-gpu==1.15
 ```
 2) Install dependencies
 ```
-pip install numpy==1.19.5 lxml pillow matplotlib jupyter contextlib2 cython tf_slim pycocotools-windows 
+pip install numpy==1.19.5 lxml pillow matplotlib jupyter contextlib2 cython tf_slim pycocotools
 ```
+(For windows change 'pycocotools' to `pycocotools-windows`
 3) Install the [TensorFlow Object Detection API ](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1.md).
 ## Dataset
 Follow the steps in \Generate_Annotations to create your own dataset from gaze and hand annotations. **@komal:** *I don't see the raw gaze files. Have we provided a link to those somewhere? That link should be visible here and/or in the readme file in \Generate_Annotations.*
@@ -40,16 +41,17 @@ Or simply download our dataset here:
 ## Training
 (under construction)
 
-Download raw Faster RCNN Inception V2 Weight.
-
-Now, to initiate a new training job, open a new Terminal, cd inside the models/research/object_detection folder and run the following command:
+1. Download raw Faster RCNN Inception V2 Weights from the above link and paste the entire folder into the training directory.
+2. Paste train.record and test.record into the training directory
+3. Set the appropriate paths in 'training_pipeline.config`
+4. Now initiate a new training job by opening a new Terminal, cd inside the models/research/object_detection folder and run the following command:
 ```
-python model_main.py  --logtostderr --model_dir=C:\Thesis\tensorflow1\models\research\object_detection\training\faster_rcnn_inception_v2 --pipeline_config_path=C:\Thesis\tensorflow1\models\research\object_detection\training\training_pipeline.config           
+python model_main.py  --logtostderr --model_dir=C:\Thesis\tensorflow1\models\research\object_detection\training\faster_rcnn_inception_v2_coco_2018_01_28 --pipeline_config_path=C:\Thesis\tensorflow1\models\research\object_detection\training\training_pipeline.config           
 ```
 ## Evaluation
-Download and extract Gaze-based and Hand-Annotated trained models to 'saved_models' directory. <add link>
+1. Download and extract Gaze-based and Hand-Annotated trained models. You can also use your own trained model from the Training step.
 
-  Run Evaluation.ipynb notebook.
+2. Run Evaluation.ipynb notebook.
 
 ## Reference
 This repo was used to generate the results for the following paper on Gaze-based labelling of Pathology data. 
