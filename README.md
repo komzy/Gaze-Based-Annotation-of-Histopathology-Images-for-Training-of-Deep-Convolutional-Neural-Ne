@@ -51,6 +51,7 @@ Or simply download our dataset here:
 ```
 python model_main.py  --logtostderr --model_dir=C:\Thesis\tensorflow1\models\research\object_detection\training\faster_rcnn_inception_v2_coco_2018_01_28 --pipeline_config_path=C:\Thesis\tensorflow1\models\research\object_detection\training\training_pipeline.config           
 ```
+5. After training has completed, export the inference graph using 'export_inference_graph.py' in the models/research/object_detection directory
 ## Evaluation
 1. Download and extract Gaze-based and Hand-Annotated trained models. You can also use your own trained model from the Training step.
 
