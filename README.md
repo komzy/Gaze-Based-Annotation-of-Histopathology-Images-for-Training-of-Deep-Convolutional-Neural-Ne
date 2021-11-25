@@ -45,7 +45,7 @@ Or simply download our dataset here:
 (under construction)
 
 1. Download raw Faster RCNN Inception V2 Weights from the above link and paste the entire folder into the training directory.
-2. Generate train.record and test.record files. Please refer to \Generate_Annotations on steps to create the these files.
+2. Generate train.record and test.record files. Please refer to \Generate_Annotations on steps to create these files.
 3. Paste train.record and test.record into the training directory
 4. Set the appropriate paths in 'training_pipeline.config`
 5. Now initiate a new training job by opening a new Terminal, cd inside the models/research/object_detection folder and run the following command:
