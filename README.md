@@ -22,7 +22,9 @@ pip install tensorflow-gpu==1.15
 ```
 pip install numpy==1.19.5 lxml pillow matplotlib jupyter contextlib2 cython tf_slim pycocotools
 ```
-(For windows change `pycocotools` to `pycocotools-windows`
+(For windows change `pycocotools` to `pycocotools-windows`)
+
+
 3) Install the [TensorFlow Object Detection API ](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1.md).
 ## Dataset
 Follow the steps in \Generate_Annotations to create your own dataset from gaze and hand annotations. **@komal:** *I don't see the raw gaze files. Have we provided a link to those somewhere? That link should be visible here and/or in the readme file in \Generate_Annotations.*
