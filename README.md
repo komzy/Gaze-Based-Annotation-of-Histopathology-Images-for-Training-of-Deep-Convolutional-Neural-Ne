@@ -2,9 +2,9 @@
 (under construction)
 
 ## Requirements
-- Anaconda
 - Tensorflow 1.15
-- Python 3.7
+- Python 3.7\
+- Anaconda
 - Qupath
 - MATLAB (masks to bounding box conversion)
 - Google Colab or Jupyter Notebook
