@@ -10,7 +10,7 @@
 - Google Colab or Jupyter Notebook
 
 ## Setting up Python Environment
-1) Create virtual environment and install Tensorflow:
+1) Create a conda environment and install Tensorflow:
 ```
 conda create -n tensorflow1.15 python=3.7
 conda activate tensorflow1.15
