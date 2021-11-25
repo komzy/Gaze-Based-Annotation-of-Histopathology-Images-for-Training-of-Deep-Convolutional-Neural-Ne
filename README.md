@@ -50,7 +50,7 @@ Or simply download our dataset here:
 4. Set the appropriate paths in 'training_pipeline.config`
 5. Now initiate a new training job by opening a new Terminal, cd inside the models/research/object_detection folder and run the following command:
 ```
-python model_main.py  --logtostderr --model_dir=C:\Thesis\tensorflow1\models\research\object_detection\training\faster_rcnn_inception_v2_coco_2018_01_28 --pipeline_config_path=C:\Thesis\tensorflow1\models\research\object_detection\training\training_pipeline.config           
+python model_main.py  --logtostderr --model_dir=PATH_TO_BE_CONFIGURED\models\research\object_detection\training\faster_rcnn_inception_v2_coco_2018_01_28 --pipeline_config_path=PATH_TO_BE_CONFIGURED\models\research\object_detection\training\training_pipeline.config           
 ```
 6. After training has completed, export the inference graph using 'export_inference_graph.py' in the models/research/object_detection directory
 ## Evaluation
