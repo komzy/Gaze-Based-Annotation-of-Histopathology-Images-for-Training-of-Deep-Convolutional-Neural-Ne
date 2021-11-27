@@ -42,8 +42,6 @@ Or simply download our dataset here:
 - Raw [Faster RCNN Inception V2 weights](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz) 
 
 ## Training
-(under construction)
-
 1. Download raw Faster RCNN Inception V2 Weights from the above link and into the `/training` directory.
 2. Generate 'train.record' and 'test.record'. Please refer to `/Generate_Annotations` on steps to create these files.
 3. Paste 'train.record' and 'test.record' into the `/training` directory.
