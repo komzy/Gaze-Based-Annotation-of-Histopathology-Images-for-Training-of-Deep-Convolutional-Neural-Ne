@@ -44,20 +44,21 @@ Or simply download our dataset here:
 ## Training
 (under construction)
 
-1. Download raw Faster RCNN Inception V2 Weights from the above link and paste the entire folder into the training directory.
-2. Generate train.record and test.record files. Please refer to \Generate_Annotations on steps to create these files.
-3. Paste train.record and test.record into the training directory
-4. Set the appropriate paths in 'training_pipeline.config`
-5. Now initiate a new training job by opening a new Terminal, cd inside the models/research/object_detection folder and run the following command:
+1. Download raw Faster RCNN Inception V2 Weights from the above link and into the `/training` directory.
+2. Generate 'train.record' and 'test.record'. Please refer to `/Generate_Annotations` on steps to create these files.
+3. Paste 'train.record' and 'test.record' into the `/training` directory.
+4. Set the appropriate paths in `training_pipeline.config`
+5. Now initiate a training job by opening a new Terminal, cd inside the `models/research/object_detection` and run the following command:
 ```
 python model_main.py  --logtostderr --model_dir=PATH_TO_BE_CONFIGURED\models\research\object_detection\training\faster_rcnn_inception_v2_coco_2018_01_28 --pipeline_config_path=PATH_TO_BE_CONFIGURED\models\research\object_detection\training\training_pipeline.config           
 ```
-6. After training has completed, export the inference graph using 'export_inference_graph.py' in the models/research/object_detection directory
+6. After training has completed, export the inference graph using `export_inference_graph.py` in the models/research/object_detection directory
+
 ## Evaluation
 1. Download and extract Gaze-based and Hand-Annotated trained models. You can also use your own trained model from the 'Training' step.
-2. Paste 'Evaluation.ipynb' and '/images' into 'models/research/object_detection/'
-3. Open terminal and cd 'models/research/object_detection/' 
-4. Run 'Evaluation.ipynb' notebook via Jupyter Notebook
+2. Paste `Evaluation.ipynb` and `/images` into `models/research/object_detection/`
+3. Open terminal and cd `models/research/object_detection/` 
+4. Run `Evaluation.ipynb` notebook via Jupyter Notebook
 
 ## Reference
 This repo was used to generate the results for the following paper on Gaze-based labelling of Pathology data. 
