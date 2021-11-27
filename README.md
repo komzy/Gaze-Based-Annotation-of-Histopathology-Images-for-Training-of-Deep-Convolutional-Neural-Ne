@@ -54,9 +54,10 @@ python model_main.py  --logtostderr --model_dir=PATH_TO_BE_CONFIGURED\models\res
 ```
 6. After training has completed, export the inference graph using 'export_inference_graph.py' in the models/research/object_detection directory
 ## Evaluation
-1. Download and extract Gaze-based and Hand-Annotated trained models. You can also use your own trained model from the Training step.
-
-2. Run Evaluation.ipynb notebook.
+1. Download and extract Gaze-based and Hand-Annotated trained models. You can also use your own trained model from the 'Training' step.
+2. Paste 'Evaluation.ipynb' into 'models/research/object_detection/'
+3. Open terminal and cd 'models/research/object_detection/' 
+4. Run 'Evaluation.ipynb' notebook via Jupyter Notebook
 
 ## Reference
 This repo was used to generate the results for the following paper on Gaze-based labelling of Pathology data. 
