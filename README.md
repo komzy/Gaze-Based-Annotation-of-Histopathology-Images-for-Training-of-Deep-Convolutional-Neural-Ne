@@ -37,7 +37,7 @@ Or simply download our dataset here:
 
 **@komal:** *Please verify that the preceding statement is correct? I recommend putting Test images in the HAND data instead of the GAZE data to avoid confusion. We're testing both detectors on Hand labels so it makes more sense to have the test data in the Hand Data director.*
 
-**@Dr.Hassan**: Please have a look now. test set in both folders is identical and created via hand labels. (Should I onlt have the test labels in hand-data directory?)
+**@Dr.Hassan**: Please have a look now. test set in both folders is identical and created via hand labels. (Should I onlt have the test labels in hand-data directory?). Also updated the labels to PASCAL VOC format since its more standardized than csvs. 
 
 **- Masks:** The binary masks used for generating labels for hand and gaze-based object detectors can be downloaded from the following links: https://1drv.ms/u/s!As_geBXhgCy1rBzg_A3ssuabn6TF?e=MD21iT
 
