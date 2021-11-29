@@ -37,7 +37,7 @@ Or simply download our dataset here:
 
 **@komal:** *Please verify that the preceding statement is correct? I recommend putting Test images in the HAND data instead of the GAZE data to avoid confusion. We're testing both detectors on Hand labels so it makes more sense to have the test data in the Hand Data director.*
 
-**@Dr.Hassan**: Please have a look now. test set in both folders is identical and created via hand labels. (Should I onlt have the test labels in hand-data directory?). Also updated the labels to PASCAL VOC format since its more standardized than csvs. 
+**@Dr.Hassan**: Please have a look now. test set in both folders is identical and created via hand labels. (Should I only have the test labels in hand-data directory?). Also updated the labels to PASCAL VOC format since its more standardized than csvs. 
 
 **- Masks:** The binary masks used for generating labels for hand and gaze-based object detectors can be downloaded from the following links: https://1drv.ms/u/s!As_geBXhgCy1rBzg_A3ssuabn6TF?e=MD21iT
 
@@ -48,7 +48,7 @@ Or simply download our dataset here:
 
 ## Training
 1. Download raw Faster RCNN Inception V2 Weights from the above link and into the `/training` directory.
-2. Generate 'train.record' and 'test.record'. Please refer to `/Generate_Annotations` on steps to create these files.
+2. From utils use the appropriate `generate_tfrecord` script to generate 'train.record' and 'test.record' from your train and test sets.
 3. Paste 'train.record' and 'test.record' into the `/training` directory.
 4. Set the appropriate paths in `training_pipeline.config`
 5. Now initiate a training job by opening a new Terminal, cd inside the `models/research/object_detection` and run the following command:
