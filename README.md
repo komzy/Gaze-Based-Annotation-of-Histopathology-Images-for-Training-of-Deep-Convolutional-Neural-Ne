@@ -5,7 +5,7 @@
 - Tensorflow 1.15
 - Python 3.7
 - Anaconda
-- Qupath
+- Qupath (for viewing Whole Slide Image (WSI) file)
 - MATLAB (masks to bounding box conversion)
 - Google Colab or Jupyter Notebook
 
@@ -45,7 +45,7 @@ Or simply download our dataset here:
    1) Every eye gaze data collection session (lasted about 5-10 minutes on average) is contained in a folder named according to the date and time. 
    2) "all_sessions_merged" folder contains all levels from every gaze data collection session merged together.
    3) "all_annotations_on_max_level" contains one csv file of the maximum resolution containing all gaze data points from all levels scaled to the highest resolution of the .svs image.
-   4) '.svs' files are the corresponding Whole Slide Image(WSI) file.
+   4) '.svs' files are the corresponding WSI file.
 
 
 
