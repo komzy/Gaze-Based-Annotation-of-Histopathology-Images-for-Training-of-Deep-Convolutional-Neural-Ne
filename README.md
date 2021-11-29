@@ -41,6 +41,13 @@ Or simply download our dataset here:
 
 **- Masks:** The binary masks used for generating labels for hand and gaze-based object detectors can be downloaded from the following links: https://1drv.ms/u/s!As_geBXhgCy1rBzg_A3ssuabn6TF?e=MD21iT
 
+**Raw Gaze Data:** https://1drv.ms/u/s!As_geBXhgCy1rkleyurgCn5g3RdX?e=f2OkBb
+   1) Every eye gaze data collection session (lasted about 5-10 minutes on average) is contained in a folder named according to the date and time. 
+   2)"all_sessions_merged" folder contains all levels from every gaze data collection session merged together.
+   3)"all_annotations_on_max_level" contains one csv file of the maximum resolution containing all gaze data points from all levels scaled to the highest resolution of the .svs image.
+   4) .svs files are the corresponding Whole Slide Image(WSI) file.
+
+
 
 ## Models
 - Pre-trained models: https://1drv.ms/u/s!As_geBXhgCy1rSjYGEV7aMdLiYnr?e=qLZOUz
@@ -55,7 +62,7 @@ Or simply download our dataset here:
 ```
 python model_main.py  --logtostderr --model_dir=PATH_TO_BE_CONFIGURED\models\research\object_detection\training\faster_rcnn_inception_v2_coco_2018_01_28 --pipeline_config_path=PATH_TO_BE_CONFIGURED\models\research\object_detection\training\training_pipeline.config           
 ```
-6. After training has completed, export the inference graph using `export_inference_graph.py` in the models/research/object_detection directory
+6. After training has completed, export the inference graph using `export_inference_graph.py` in the `models\research\object_detection` directory
 
 ## Evaluation
 1. Download and extract Gaze-based and Hand-Annotated trained models. You can also use your own trained model from the 'Training' step.
