@@ -41,7 +41,7 @@ Or simply download our dataset here:
 
 **- Masks:** The binary masks used for generating labels for hand and gaze-based object detectors can be downloaded from the following links: https://1drv.ms/u/s!As_geBXhgCy1rBzg_A3ssuabn6TF?e=MD21iT
 
-**Raw Gaze Data:** https://1drv.ms/u/s!As_geBXhgCy1rkleyurgCn5g3RdX?e=f2OkBb
+**- Raw Gaze Data:** https://1drv.ms/u/s!As_geBXhgCy1rkleyurgCn5g3RdX?e=f2OkBb
    1) Every eye gaze data collection session (lasted about 5-10 minutes on average) is contained in a folder named according to the date and time. 
    2) "all_sessions_merged" folder contains all levels from every gaze data collection session merged together.
    3) "all_annotations_on_max_level" contains one csv file of the maximum resolution containing all gaze data points from all levels scaled to the highest resolution of the .svs image.
