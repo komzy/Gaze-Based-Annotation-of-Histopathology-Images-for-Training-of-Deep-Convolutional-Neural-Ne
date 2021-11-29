@@ -9,4 +9,5 @@ for each zoom level that can be opened by our gaze visualizer. Only "Point" obje
 
 Python Scripts:
 
-1) generate_tfrecord.py: convert dataset images and annotations to '.record'. 
+1) generate_tfrecord_from_csv.py: convert dataset images and annotations in CSV format to TF compatible '.record'
+2) generate_tfrecord_from_pascalvoc.py: convert dataset images and annotations in PASCAL VOC format to TF compatible '.record'
