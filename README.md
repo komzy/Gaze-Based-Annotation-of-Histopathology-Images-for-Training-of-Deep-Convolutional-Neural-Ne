@@ -69,11 +69,13 @@ python model_main.py  --logtostderr --model_dir=PATH_TO_BE_CONFIGURED\models\res
 6. After training has completed, export the inference graph using `export_inference_graph.py` in the `models\research\object_detection` directory
 
 ## Evaluation
-1. Download and extract Gaze-based and Hand-Annotated trained models. You can also use your own trained model from the 'Training' step.
-2. Paste `Evaluation.ipynb` and `/images` into `models/research/object_detection/`
-3. Open terminal and cd `models/research/object_detection/` 
-4. Run `Evaluation.ipynb` notebook via Jupyter Notebook
+The Faster RCNN model was implemented in tensorflow. `Evaluation.ipynb` can be used to test the Faster RCNN model on the test data.
+1. Download and extract Gaze-based and Hand-Annotated trained models (https://1drv.ms/u/s!As_geBXhgCy1rSjYGEV7aMdLiYnr?e=qLZOUz). If you prefer to train your own model then you can do so by following the instructions provided in the Training section above.
+3. Paste `Evaluation.ipynb` and `/images` into `models/research/object_detection/`
+4. Open terminal and cd `models/research/object_detection/` 
+5. Run `Evaluation.ipynb` notebook via Jupyter Notebook
 
+The YOLO models were implemented in PyTorch and can be found at the following repo: link to Osama's repo here.
 ## Reference
 This repo was used to generate the results for the following paper on Gaze-based labelling of Pathology data. 
    
