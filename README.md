@@ -2,15 +2,15 @@
 This repo contains the code and data used for our work on Gaze-based annotation of histopathology images. Table of contents is given below
 * [Requirements](#requirements)
 * [Setting up Python Environment](#setting-up-python-environment)
-* Dataset
+* [Dataset](#dataset)
    * Gaze
    * Hand
    * Masks
    * Raw Gaze Data
-* Models
-* Training
-* Evaluation
-* Reference
+* [Models](#models)
+* [Training](#training)
+* [Evaluation](#evaluation)
+* [Reference](#reference)
 
 # Requirements
 - Tensorflow 1.15
