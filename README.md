@@ -29,7 +29,7 @@ pip install numpy==1.19.5 lxml pillow matplotlib jupyter contextlib2 cython tf_s
 ## Dataset
 Follow the steps in `\Generate_Annotations` to create your own dataset from gaze and hand annotations. **@komal:** *I don't see the raw gaze files. Have we provided a link to those somewhere? That link should be visible here and/or in the readme file in \Generate_Annotations.*
 
-**@Dr.Hassan** Added the link to raw gaze files and their corresponding csv.
+**@Dr.Hassan** Added the link to raw gaze files and their corresponding csv. Added instructions to visualise gaze annotations in Qupath in /Generate_Annotations readme
 
 Or simply download our dataset here:
 
