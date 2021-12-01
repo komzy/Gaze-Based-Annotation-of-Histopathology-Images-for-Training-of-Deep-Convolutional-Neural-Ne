@@ -1,6 +1,6 @@
 ## Generate Binary Masks from Gaze Annotations
 
-1) Run 1_Gaze_to_BinaryMask.py. Set the input_path to the raw Gaze Annotation directory containing 'info.json' (preferably the 'all_sessions_merged' folder). Vary kernel width of KDE via ngaussian and threshold by multiple parameters. Output should be binary mask image files and their corresponding RGB tiles.
+1) Run 1_Gaze_to_BinaryMask.py. Download the 'Raw_Gaze_Data' folder from https://1drv.ms/u/s!As_geBXhgCy1rkleyurgCn5g3RdX?e=f2OkBb. Set the input_path to the raw Gaze Annotation directory containing 'info.json' (preferably the `Raw_Gaze_Data/Case_Number/all_sessions_merged` folder). Kernel width of the KDE algorithm can be varied via the `ngaussian` parameter. Thresholding can be controlled via the `multiple` parameter. Output should be binary mask image files and their corresponding RGB tiles.
 
 2) Run 3_BinaryMask_to_BoundingBox.m in MATLAB. The script converts white 'blobs' in binary mask image files to bounding boxes. Output should be a CSV containing BBox coordinates. 
 
