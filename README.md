@@ -29,6 +29,8 @@ pip install numpy==1.19.5 lxml pillow matplotlib jupyter contextlib2 cython tf_s
 ## Dataset
 Follow the steps in `\Generate_Annotations` to create your own dataset from gaze and hand annotations. **@komal:** *I don't see the raw gaze files. Have we provided a link to those somewhere? That link should be visible here and/or in the readme file in \Generate_Annotations.*
 
+**@Dr.Hassan** Added the link to raw gaze files and their corresponding csv.
+
 Or simply download our dataset here:
 
 **- Gaze:** Images used for training and testing of gaze-based object detectors can be downloaded from the following link: https://1drv.ms/u/s!As_geBXhgCy1qjOElYHo5oWX_OQ0?e=L38qQ6. The labels corresponding to each file in the training and test dataset can be found in "train.xls" and "test.xlx" respectively.
