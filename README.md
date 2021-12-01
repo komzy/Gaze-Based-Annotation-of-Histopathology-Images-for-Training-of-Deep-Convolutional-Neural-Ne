@@ -1,7 +1,18 @@
 # Gaze Based Annotation of Histopathology Images for Training of Deep Convolutional Neural Networks
-(under construction)
+This repo contains the code and data used for our work on Gaze-based annotation of histopathology images. Table of contents is given below
+* [Requirements](#requirements)
+* [Setting up Python Environment](#setting-up-python-environment)
+* Dataset
+   * Gaze
+   * Hand
+   * Masks
+   * Raw Gaze Data
+* Models
+* Training
+* Evaluation
+* Reference
 
-## Requirements
+# Requirements
 - Tensorflow 1.15
 - Python 3.7
 - Anaconda
@@ -9,7 +20,7 @@
 - MATLAB (masks to bounding box conversion)
 - Google Colab or Jupyter Notebook
 
-## Setting up Python Environment
+# Setting up Python Environment
 1) Create a conda environment and install Tensorflow:
 ```
 conda create -n tensorflow1.15 python=3.7
@@ -33,9 +44,9 @@ Follow the steps in `\Generate_Annotations` to create your own dataset from gaze
 
 Or simply download our dataset here:
 
-**- Gaze:** Images used for training and testing of gaze-based object detectors can be downloaded from the following link: https://1drv.ms/u/s!As_geBXhgCy1qjOElYHo5oWX_OQ0?e=L38qQ6. The labels corresponding to each file in the training and test dataset can be found in "Gaze_Data/labels/train" and "Gaze_Data/labels/test" respectively. 
+**- Gaze:** Images used for training and testing of gaze-based object detectors can be downloaded from [here](https://1drv.ms/u/s!As_geBXhgCy1qjOElYHo5oWX_OQ0?e=L38qQ6). The labels corresponding to each file in the training and test dataset can be found in "Gaze_Data/labels/train" and "Gaze_Data/labels/test" respectively. 
 
-**- Hand:** Images used for training and testing of object detectors on hand-labelled data can be downloaded from the following link: https://1drv.ms/u/s!As_geBXhgCy1qwa3-NdukNHbLRsb?e=NT3Abi. The labels corresponding to each file in the training and test dataset can be found in "Hand_Data/labels/train" and "Hand_Data/labels/test" respectively. `NOTE:` Hand generated labels were used for performance evaluation of both gaze-based and hand-labelled object detectors. Therefore, the contents of both the "Gaze_Data/labels/test" and the "Hand_Data/labels/test" folders are identical. 
+**- Hand:** Images used for training and testing of object detectors on hand-labelled data can be downloaded from [here](https://1drv.ms/u/s!As_geBXhgCy1qwa3-NdukNHbLRsb?e=NT3Abi). The labels corresponding to each file in the training and test dataset can be found in "Hand_Data/labels/train" and "Hand_Data/labels/test" respectively. `NOTE:` Hand generated labels were used for performance evaluation of both gaze-based and hand-labelled object detectors. Therefore, the contents of both the "Gaze_Data/labels/test" and the "Hand_Data/labels/test" folders are identical. 
 
 **@komal:** *Please verify that the preceding statement is correct? I recommend putting Test images in the HAND data instead of the GAZE data to avoid confusion. We're testing both detectors on Hand labels so it makes more sense to have the test data in the Hand Data director.*
 
@@ -43,9 +54,10 @@ Or simply download our dataset here:
 
 **@komal:** Names of test images in Gaze_Data and Hand_Data are slightly different. Images contents are the same though. Names of label files are the same in both label directories. Names of image files in Gaze_Data/images/test_png/ matches the names of the label files in both Gaze_Data and Hand_Data directories. I think you should copy-paste test images from Gaze_Data/images/test_png/ and overwrite images in Hand_Data/images/test/ to make things consistent. I have not done so myself because I am not sure if renaming files will have an impact on your code. The description I added above (under -Gaze and -Hand headings) is written with the assumption that test, label and image files for both Gaze and Hand data are identical. Please delete this comments and preceding 2 comments after image files are overwritten.
 
-**- Masks:** The binary masks used for generating labels for hand and gaze-based object detectors can be downloaded from the following links: https://1drv.ms/u/s!As_geBXhgCy1rBzg_A3ssuabn6TF?e=MD21iT
+**- Masks:** The binary masks used for generating labels for hand and gaze-based object detectors can be downloaded from [here](https://1drv.ms/u/s!As_geBXhgCy1rBzg_A3ssuabn6TF?e=MD21iT)
 
-**- Raw Gaze Data:** https://1drv.ms/u/s!As_geBXhgCy1rkleyurgCn5g3RdX?e=f2OkBb
+**- Raw Gaze Data:** 
+The raw gaze data is available [here](https://1drv.ms/u/s!As_geBXhgCy1rkleyurgCn5g3RdX?e=f2OkBb). This data needs to be converted into binary masks before it can be used to train an object detector.
    1) Every eye gaze data collection session (lasted about 5-10 minutes on average) is contained in a folder named according to the date and time. 
    2) "all_sessions_merged" folder contains all levels from every gaze data collection session merged together.
    3) "all_annotations_on_max_level" contains one csv file of the maximum resolution containing all gaze data points from all levels scaled to the highest resolution of the .svs image.
@@ -54,7 +66,7 @@ Or simply download our dataset here:
 
 
 ## Models
-- Pre-trained models: https://1drv.ms/u/s!As_geBXhgCy1rSjYGEV7aMdLiYnr?e=qLZOUz
+- Our pre-trained Faster RCNN models are available [here](https://1drv.ms/u/s!As_geBXhgCy1rSjYGEV7aMdLiYnr?e=qLZOUz).
 - Raw [Faster RCNN Inception V2 weights](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz) 
 
 ## Training
@@ -70,7 +82,7 @@ python model_main.py  --logtostderr --model_dir=PATH_TO_BE_CONFIGURED\models\res
 
 ## Evaluation
 The Faster RCNN model was implemented in tensorflow. `Evaluation.ipynb` can be used to test the Faster RCNN model on the test data.
-1. Download and extract Gaze-based and Hand-Annotated trained models (https://1drv.ms/u/s!As_geBXhgCy1rSjYGEV7aMdLiYnr?e=qLZOUz). If you prefer to train your own model then you can do so by following the instructions provided in the Training section above.
+1. Download and extract our [Gaze-based and Hand-Annotated trained models](https://1drv.ms/u/s!As_geBXhgCy1rSjYGEV7aMdLiYnr?e=qLZOUz). If you prefer to train your own model then you can do so by following the instructions provided in the Training section above.
 3. Paste `Evaluation.ipynb` and `/images` into `models/research/object_detection/`
 4. Open terminal and cd `models/research/object_detection/` 
 5. Run `Evaluation.ipynb` notebook via Jupyter Notebook
