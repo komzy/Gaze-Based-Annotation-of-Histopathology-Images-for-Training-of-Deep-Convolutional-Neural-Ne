@@ -33,9 +33,9 @@ Follow the steps in `\Generate_Annotations` to create your own dataset from gaze
 
 Or simply download our dataset here:
 
-**- Gaze:** Images used for training and testing of gaze-based object detectors can be downloaded from the following link: https://1drv.ms/u/s!As_geBXhgCy1qjOElYHo5oWX_OQ0?e=L38qQ6. The labels corresponding to each file in the training and test dataset can be found in "train.xls" and "test.xlx" respectively.
+**- Gaze:** Images used for training and testing of gaze-based object detectors can be downloaded from the following link: https://1drv.ms/u/s!As_geBXhgCy1qjOElYHo5oWX_OQ0?e=L38qQ6. The labels corresponding to each file in the training and test dataset can be found in "labels/train" and "labels/test" resectively. 
 
-**- Hand:** Images used for training and testing of gaze-based object detectors can be downloaded from the following link: https://1drv.ms/u/s!As_geBXhgCy1qwa3-NdukNHbLRsb?e=NT3Abi. The labels corresponding to each file in the training dataset can be found in the "train.xls" file. Object detectors trained on hand-labelled data were tested on the same images as the gaze-trained classifier. Therefore, the label file: *Gaze_Data/test.xlx* and the images in the *Gaze_Data/images/test_png* directory should be used for testing purposes.
+**- Hand:** Images used for training and testing of gaze-based object detectors can be downloaded from the following link: https://1drv.ms/u/s!As_geBXhgCy1qwa3-NdukNHbLRsb?e=NT3Abi. The labels corresponding to each file in the training dataset can be found in the "labels/train" file. Object detectors trained on hand-labelled data were tested on the same images as the gaze-trained classifier. ***Therefore, the label file: *Gaze_Data/test.xlx* and the images in the *Gaze_Data/images/test_png* directory should be used for testing purposes.*** **@Dr.Hassan:** should we remove this line as I have provided duplicate copies of the test set in both hand and gaze folders.
 
 **@komal:** *Please verify that the preceding statement is correct? I recommend putting Test images in the HAND data instead of the GAZE data to avoid confusion. We're testing both detectors on Hand labels so it makes more sense to have the test data in the Hand Data director.*
 
