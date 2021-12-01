@@ -12,4 +12,4 @@
 1. Open the `.svs` file in the Raw_Gaze data in Qupath. 
 2. Open 'utils/CSV_to_Qupath.groovy`in Qupath.
 3. Set `maxLevel` to the highest zoom level contined in 'info.json' associated with the Raw_Gaze data 
-4. Run the script and enter the path of a directory containing the gaze csvs ('Level xx') when prompted. 
+4. Run the script and input the path of the directory containing the gaze csvs ('Level xx') when prompted. 
