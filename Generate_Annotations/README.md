@@ -8,7 +8,8 @@
 
 1) Run 2_QuPath_to_BinaryMask.groovy in Qupath to convert annotations to binary masks. Ouput are binary masks and their corresponding RGB tiles.
 
-2) Run 3_BinaryMask_to_BoundingBox.m in MATLAB. The script converts white 'blobs' in binary mask image files to bounding boxes. Output should be a CSV containing BBox coordinates. 
+2) Run 3_BinaryMask_to_BoundingBox.m in MATLAB. The script converts white 'blobs' in binary mask image files to bounding boxes. Output should be a CSV containing BBox coordinates.
+**@komal:** How to convert csv to xml format currently being used?
 
 ## Visualize Gaze based Annotations in Qupath
 1) Open the `.svs` file in the Raw_Gaze data in Qupath. 
