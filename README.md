@@ -48,12 +48,6 @@ Or simply download our dataset here:
 
 **- Hand:** Images used for training and testing of object detectors on hand-labelled data can be downloaded from [here](https://1drv.ms/u/s!As_geBXhgCy1qwa3-NdukNHbLRsb?e=NT3Abi). The labels corresponding to each file in the training and test dataset can be found in "Hand_Data/labels/train" and "Hand_Data/labels/test" respectively. `NOTE:` Hand generated labels were used for performance evaluation of both gaze-based and hand-labelled object detectors. Therefore, the contents of both the "Gaze_Data/labels/test" and the "Hand_Data/labels/test" folders are identical. 
 
-**@komal:** *Please verify that the preceding statement is correct? I recommend putting Test images in the HAND data instead of the GAZE data to avoid confusion. We're testing both detectors on Hand labels so it makes more sense to have the test data in the Hand Data director.*
-
-**@Dr.Hassan**: Please have a look now. test set in both folders is identical and created via hand labels. (Should I only have the test labels in hand-data directory?). Also updated the labels to PASCAL VOC format since its more standardized than csvs. 
-
-**@komal:** Names of test images in Gaze_Data and Hand_Data are slightly different. Images contents are the same though. Names of label files are the same in both label directories. Names of image files in Gaze_Data/images/test_png/ matches the names of the label files in both Gaze_Data and Hand_Data directories. I think you should copy-paste test images from Gaze_Data/images/test_png/ and overwrite images in Hand_Data/images/test/ to make things consistent. I have not done so myself because I am not sure if renaming files will have an impact on your code. The description I added above (under -Gaze and -Hand headings) is written with the assumption that test, label and image files for both Gaze and Hand data are identical. Please delete this comments and preceding 2 comments after image files are overwritten.
-
 **- Masks:** The binary masks used for generating labels for hand and gaze-based object detectors can be downloaded from [here](https://1drv.ms/u/s!As_geBXhgCy1rBzg_A3ssuabn6TF?e=MD21iT)
 
 **- Raw Gaze Data:** 
