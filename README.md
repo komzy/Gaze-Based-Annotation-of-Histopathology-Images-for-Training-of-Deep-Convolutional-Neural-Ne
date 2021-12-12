@@ -39,7 +39,7 @@ pip install numpy==1.19.5 lxml pillow matplotlib jupyter contextlib2 cython tf_s
 3) Install the [TensorFlow Object Detection API ](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1.md).
 ## Dataset
 Follow the steps in `\Generate_Annotations` to create your own dataset from gaze and hand annotations. 
-Or simply download our dataset here:
+Or simply download our dataset from the links below.
 
 **- Gaze:** Images used for training and testing of gaze-based object detectors can be downloaded from [here](https://1drv.ms/u/s!As_geBXhgCy1qjOElYHo5oWX_OQ0?e=L38qQ6). The labels corresponding to each file in the training and test dataset can be found in "Gaze_Data/labels/train" and "Gaze_Data/labels/test" respectively. 
 
