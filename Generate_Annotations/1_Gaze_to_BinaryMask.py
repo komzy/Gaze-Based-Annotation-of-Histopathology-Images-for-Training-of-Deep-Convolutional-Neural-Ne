@@ -10,9 +10,10 @@ import openslide
 
 """
 1_Gaze_to_BinaryMask.py: Script to generate binary masks for fixation regions and correspoinding RGB 
-image. Python equivalent to tiling.groovy with additional support for fixation regions and thresholding
-Generates patches for regions containing atleast 1 white pixel
-Uncomment if statements (which if statements? Specify line number here) to generate all patches. 
+image. Python equivalent to 2_QuPath_to_BinaryMask.groovy with additional support for fixation regions and thresholding
+Generates masks + RGB tiles for regions containing atleast 1 white pixel.
+
+Uncomment lines 85-88 and if conditions on lines 187-190, 220-223 to generate corresponding RGB tiles.
 WARNING: This will slow down execution
 """
 
