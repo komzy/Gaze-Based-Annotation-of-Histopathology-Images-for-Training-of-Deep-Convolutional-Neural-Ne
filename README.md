@@ -82,7 +82,7 @@ The Faster RCNN model was implemented in tensorflow. `Evaluation.ipynb` can be u
 The YOLO models were implemented in PyTorch and can be found in this [repo](https://github.com/OAfzal/GazeYoloModels).
 
 ## Results
-Results for both YOLOv3 and Faster R-CNN can be found [here](https://1drv.ms/u/s!As_geBXhgCy1rz2y3zLqQZ5a_PQ3?e=2n7O1W).
+Results for both YOLOv3 and Faster R-CNN can be found [here](https://1drv.ms/u/s!As_geBXhgCy1rz2y3zLqQZ5a_PQ3?e=2n7O1W). Metrics generated using this [repo](https://github.com/Cartucho/mAP).
 
 
 ## Reference
