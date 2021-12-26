@@ -59,7 +59,7 @@ The raw gaze data is available [here](https://1drv.ms/u/s!As_geBXhgCy1rkleyurgCn
 ## Models
 - Our pre-trained Faster RCNN models are available [here](https://1drv.ms/u/s!As_geBXhgCy1rSjYGEV7aMdLiYnr?e=qLZOUz).
 - Raw [Faster RCNN Inception V2 weights](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz) 
-- YOLOv3 and YOLOv4 models were trained using PyTorch and can be downloaded from [here](https://github.com/OAfzal/GazeYoloModels)
+- YOLOv3 and YOLOv5 models were trained using PyTorch and can be downloaded from [here](https://github.com/OAfzal/GazeYoloModels)
 
 ## Training
 1. Download raw Faster RCNN Inception V2 Weights from the above link and into the `/training` directory.
