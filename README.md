@@ -79,7 +79,7 @@ The Faster RCNN model was implemented in tensorflow. `Evaluation.ipynb` can be u
 4. Open terminal and cd `models/research/object_detection/` 
 5. Run `Evaluation.ipynb` notebook via Jupyter Notebook
 
-The YOLO models were implemented in PyTorch and can be found at the following repo: link to Osama's repo here.
+The YOLO models were implemented in PyTorch and can be found in this [repo](https://github.com/OAfzal/GazeYoloModels). 
 ## Reference
 This repo was used to generate the results for the following paper on Gaze-based labelling of Pathology data. 
    
